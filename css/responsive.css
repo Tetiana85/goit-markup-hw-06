@@ -1,0 +1,59 @@
+@media only screen and (min-width: 428px) {
+
+}
+
+@media only screen and (min-width: 428px) and (resolution: 2dppx) {
+    .solutions {
+        background-image: linear-gradient(to bottom, var(--background-two), var(--background-two)), url(../images/people-office@2x.jpg);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-ul {
+        display: flex;
+        gap: 40px;
+    }
+
+    .address-ul {
+        display: block;
+    }
+
+    .solutions {
+        background-image: linear-gradient(to bottom, var(--background-two), var(--background-two)), url(../images/people-office-tablet.jpg);
+    }
+}
+
+@media only screen and (min-width: 768px) and (resolution: 2dppx) {
+    .solutions {
+        background-image: linear-gradient(to bottom, var(--background-two), var(--background-two)), url(../images/people-office-tablet@2x.jpg);
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+
+    .address-ul {
+        display: flex;
+    }
+
+    .solutions {
+        background-image: linear-gradient(to bottom, var(--background-two), var(--background-two)), url(../images/people-office-desktop.jpg);
+    }
+}
+
+@media only screen and (min-width: 1158px) and (resolution: 2dppx) {
+    .solutions {
+        background-image: linear-gradient(to bottom, var(--background-two), var(--background-two)), url(../images/people-office-desktop@2x.jpg);
+    }
+}
