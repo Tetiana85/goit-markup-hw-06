@@ -29,6 +29,7 @@
     .solutions {
         background-image: linear-gradient(to bottom, var(--background-two), var(--background-two)), url(../images/people-office-tablet.jpg);
     }
+
 }
 
 @media only screen and (min-width: 768px) and (resolution: 2dppx) {
