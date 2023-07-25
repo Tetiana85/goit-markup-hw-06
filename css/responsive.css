@@ -27,7 +27,16 @@
     }
 
     .solutions {
+        padding: 112px 0;
         background-image: linear-gradient(to bottom, var(--background-two), var(--background-two)), url(../images/people-office-tablet.jpg);
+    }
+
+    .solutions-title {
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        max-width: 496px;
+        text-transform: none;
     }
 
 }
@@ -49,6 +58,8 @@
     }
 
     .solutions {
+        max-width: 1440px;
+        padding: 188px 0;
         background-image: linear-gradient(to bottom, var(--background-two), var(--background-two)), url(../images/people-office-desktop.jpg);
     }
 }

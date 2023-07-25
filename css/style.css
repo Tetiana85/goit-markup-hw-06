@@ -207,6 +207,16 @@ body {
 
 .solutions {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--titles-color);
+    padding: 122px 0;
+    background-image: linear-gradient(to bottom, var(--background-two), var(--background-two)), url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    /* display: flex;
     background-color: var(--titles-color);
     max-width: 1440px;
     padding: 188px 0 188px;
@@ -214,17 +224,32 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
 
 .solutions-title {
+    display:block;
     color: var(--bg-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    max-width: 320px;
+    margin: 0 auto;
+
+
+
+    /* margin: 0 auto; */
+    /* color: var(--bg-color);
     font-size: 56px;
     letter-spacing: 0.02em;
     line-height: 1.07;
     max-width: 496px;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
+
 
 .li-title {
     font-size: 20px;
@@ -233,6 +258,7 @@ body {
     line-height: 1.2;
     color: var(--titles-color);
     margin-bottom: 8px;
+    
 }
 
 .li-par {
