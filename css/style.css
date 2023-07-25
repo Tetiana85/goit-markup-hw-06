@@ -997,11 +997,10 @@ body {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.02em;/
+    letter-spacing: 0.02em;
 }
 
 .mobile-social-list{
     display: flex;
     gap: 56px;
 }
-
