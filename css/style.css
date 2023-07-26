@@ -550,7 +550,11 @@ body {
 
 
 /* ------DOING------- */
-
+.doing {
+    display:none;
+    /* padding: 0 0 120px; */
+    
+}
 /* .doing {
     padding: 0 0 120px;
 }
@@ -698,23 +702,39 @@ body {
 /* -------FOOTER-------- */
 
 .footer {
-    display: flex;
+    padding: 97px 0 96px;
     background-color: var(--titles-color);
     color: var(--bg-color-team-footer);
-    padding: 100px 0;
+
+    /* display: flex;
+    background-color: var(--titles-color);
+    color: var(--bg-color-team-footer);
+    padding: 100px 0; */
 }
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    /* display: flex;
+    align-items: baseline; */
 }
+
 
 .logo-container {
-    margin-right:120px;
+    text-align: center;
+    margin-bottom: 72px;
+    /* margin-right:120px; */
 }
-
+.footer-social{
+    text-align: center;
+    margin-bottom: 72px;
+}
 .footer-link {
-    margin-bottom:16px;
+    margin-bottom: 17px;
+    margin-right: 0;
+    padding: 0;
+    /* margin-bottom:16px; */
 }
 
 .footer-span {
@@ -726,6 +746,11 @@ body {
     letter-spacing: 0.02em;
     width: 264px;
     margin-bottom: 16px;
+    text-align: left;
+    /* line-height: 1.5;
+    letter-spacing: 0.02em;
+    width: 264px;
+    margin-bottom: 16px; */
 }
 
 .footer-text-social {
@@ -769,12 +794,14 @@ body {
 }
 
 .container-form {
-    margin-left: 80px;
+    text-align: center;
+    width: 100%;
+    /* margin-left: 80px; */
 }
 
 .form-footer {
-    display: flex;
-    gap: 24px;
+    /* display: flex;
+    gap: 24px; */
 }
 .footer-form-par{
     margin-bottom: 16px;
@@ -785,7 +812,19 @@ body {
     color: var(--bg-color);
 }
 .form-footer-input {
-    width: 264px;
+    width:100%;
+    height: 40px;
+    border: 1px solid var(--bg-color);
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--bg-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* width: 264px;
     height: 40px;
     border: 1px solid var(--bg-color);
     background-color: transparent;
@@ -796,7 +835,7 @@ body {
     filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color: var(--bg-color); 
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .form-footer-input:hover,
 .form-footer-input:focus {
@@ -805,6 +844,7 @@ body {
 .footer-form-button {
     display: flex;
     min-width: 165px;
+    margin: 16px auto 0;
     height: 40px;
     justify-content: center;
     align-items: center;
@@ -819,6 +859,23 @@ body {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* display: flex;
+    min-width: 165px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--bg-color);
+    background-color: var(--btn-and-logo);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .footer-form-button:hover,
 .footer-form-button:focus {
@@ -1060,7 +1117,7 @@ body {
 .list.address-ul.mobile-address li:first-child a {
     color: var(--btn-and-logo);
     font-family: Roboto;
-    font-size: 36px;
+    font-size: calc(((100vw - 320px) * (11 / 108)) + 25px);
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -1078,5 +1135,5 @@ body {
 
 .mobile-social-list{
     display: flex;
-    gap: 56px;
+    gap: calc(((100vw - 320px) * (28 / 108)) + 28px);
 }
