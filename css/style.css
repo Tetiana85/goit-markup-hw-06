@@ -651,17 +651,24 @@ body {
 
 /* ---------CUSTOMERS-------- */
 .customers {
-    padding-bottom: 120px;
-    padding-top: 120px;
+    padding: 96px 0;
+    /* padding-bottom: 120px;
+    padding-top: 120px; */
 }
 
 .customers-list {
-    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 16px;
+    /* gap: 24px; */
 }
 
 .customers-list-item {
-    width: calc((100% - 120px) / 6);
+    width: 100%;
+    width: calc((100% - 16px) / 2);
     height: 88px;
+    /* width: calc((100% - 120px) / 6);
+    height: 88px; */
 }
 
 .customers-link-item {
