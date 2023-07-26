@@ -1,5 +1,7 @@
 @media only screen and (min-width: 428px) {
-
+    .doing{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 428px) and (resolution: 2dppx) {
@@ -39,14 +41,29 @@
         text-transform: none;
     }
 
-    .items-ul{
+
+    .items-ul {
         justify-content: space-between;
-        gap: 24px;
+        gap: 72px 24px;
     }
 
     .items-section-list {
         width: calc((100% - 24px) / 2);
-        margin-bottom: 72px;
+    }
+
+
+
+    .doing {
+        display: none;
+    }
+
+    .team-ul {
+        gap: 64px 24px;
+
+    }
+
+    .li-title-items{
+        text-align-last: left;
     }
 }
 
@@ -62,15 +79,24 @@
         padding: 0 15px;
     }
 
+  /* -------HEADER----- */
+
+
     .address-ul {
         display: flex;
     }
+
+  /* -----------SOLUTIONS------------- */
 
     .solutions {
         max-width: 1440px;
         padding: 188px 0;
         background-image: linear-gradient(to bottom, var(--background-two), var(--background-two)), url(../images/people-office-desktop.jpg);
     }
+
+
+
+  /* -----ITEMS--------- */
 
     .items {
         padding: 120px 0 120px;
@@ -86,6 +112,13 @@
         align-items: center;
         margin-bottom: 8px;
     }
+
+
+    .items-ul {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
     .items-section-list {
         width: calc((100% - 72px) / 4);
     }
@@ -95,11 +128,52 @@
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        text-align:left
+        text-align: left;
     }
     .li-par-items {
         font-weight: 400;
     }
+
+  /* ------DOING------- */
+
+    .doing {
+        display: block;
+        padding: 0 0 120px;
+    }
+
+    .title {
+        color: var(--titles-color);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 72px;
+    }
+
+    .doing-li {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .doing-ul>li:not(:last-child) {
+        margin-right: 24px;
+    }
+
+   /* --------TEAM--------- */
+
+   .team {
+       padding: 120px 0;
+   }
+
+   .team-ul {
+       /* justify-content: space-between; */
+   }
+
+   /* .team-ul>li:not(:last-child) {
+        margin-right: 24px;
+} */
+
 }
 
 @media only screen and (min-width: 1158px) and (resolution: 2dppx) {
