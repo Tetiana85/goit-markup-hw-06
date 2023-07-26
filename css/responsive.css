@@ -39,6 +39,15 @@
         text-transform: none;
     }
 
+    .items-ul{
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .items-section-list {
+        width: calc((100% - 24px) / 2);
+        margin-bottom: 72px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (resolution: 2dppx) {
@@ -61,6 +70,35 @@
         max-width: 1440px;
         padding: 188px 0;
         background-image: linear-gradient(to bottom, var(--background-two), var(--background-two)), url(../images/people-office-desktop.jpg);
+    }
+
+    .items {
+        padding: 120px 0 120px;
+    }
+    .icons-svg {
+        display: flex;
+        width: 264px;
+        height: 112px;
+        flex-shrink: 0;
+        background-color: #F4F4FD;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    .items-section-list {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .li-title-items {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-align:left
+    }
+    .li-par-items {
+        font-weight: 400;
     }
 }
 
