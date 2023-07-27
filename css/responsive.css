@@ -1,12 +1,18 @@
 @media only screen and (min-width: 428px) {
-    .doing{
-        display: none;
-    }
+        .doing{
+            display: none;
+        }
         .list.address-ul.mobile-address li:first-child a{
             font-size: 36px;
         }
         .mobile-social-list{
             gap: 56px;
+        }
+        .modal-form-checkbox {
+            font-size: 12px;
+        }
+        .modal-form-header {
+            font-size: 16px;
         }
 }
 
@@ -120,6 +126,11 @@
         .form-footer-input{
             width: 264px;
         }
+        .modal {
+            max-width: 408px;
+            padding: 72px 24px 24px;
+        }
+
 }
 
 @media only screen and (min-width: 768px) and (resolution: 2dppx) {
@@ -276,12 +287,7 @@
 
     .form-footer-input {
         width: 264px;
-}
-
-
-
-
-
+    }
 }
 
 @media only screen and (min-width: 1158px) and (resolution: 2dppx) {
