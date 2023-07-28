@@ -46,7 +46,9 @@
         line-height: 1.17;
         letter-spacing: 0.04em;
     }
-
+    .address-ul li:not(:last-of-type){
+        margin-bottom: 12px;
+    }
 /* ---------------------------------- */
     .solutions {
         padding: 112px 0;
