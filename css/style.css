@@ -156,9 +156,13 @@ body {
 .nav-ul {
     display: none;
 }
+
+.mobile-menu-list:not(:last-child){
+    margin-bottom: 40px;
+}
+
 .li-items {
     font-weight: 500;
-    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -989,7 +993,6 @@ body {
 .mobile-menu .li-items{
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 40px;
 }
 
 .menu-container .mobile-address{
