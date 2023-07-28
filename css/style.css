@@ -165,6 +165,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    padding: 24px 0;
     letter-spacing: 0.02em;
     color: var(--titles-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -789,7 +790,6 @@ body {
 
 .products {
     padding: 48px 0 48px;
-    /* padding: 96px 0 120px; */
 }
 
 .button-ul{
@@ -813,9 +813,6 @@ body {
 .products .button-ul {
     display: flex;
     margin-bottom: 48px;
-    /* display: flex;
-    justify-content: center;
-    margin-bottom: 72px; */
 }
 
 .button-ul>li:not(:last-child) {
@@ -843,15 +840,10 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 48px;
-
-    /* display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px; */
 }
 
 .cards-item {
-    /* width: calc((100% - 48px) / 3); */
+    max-width: 100%;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -864,8 +856,7 @@ body {
 
 .box {
     position: relative;
-    width: 396px;
-    height: 280px;
+    max-width: 396px;
     overflow: hidden;
     margin: 0 auto;
     /* position: relative;
@@ -876,6 +867,7 @@ body {
 }
 
 .overlay-p {
+    display: none;
     position: absolute;
     top: 0;
     font-size: 16px;
